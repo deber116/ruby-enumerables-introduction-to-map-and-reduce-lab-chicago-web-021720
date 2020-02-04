@@ -11,5 +11,12 @@ def map_to_negativize(source_array)
 end 
 
 def map_to_no_change(source_array)
-  
+  result = []
+  array_index = 0 
+  while array_index < source_array.count do
+    element = source_array[array_index] 
+    result << element
+    array_index += 1
+  end
+  result
 end
