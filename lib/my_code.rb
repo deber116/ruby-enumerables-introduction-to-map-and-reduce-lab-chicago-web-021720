@@ -67,5 +67,14 @@ def reduce_to_all_true(source_array)
 end
 
 def reduce_to_any_true(source_array)
-  
+  result = false
+  array_index = 0 
+  while array_index < source_array.count do
+    element = source_array[array_index]
+    if element
+      result = true
+    end
+    array_index += 1 
+  end
+  result
 end
