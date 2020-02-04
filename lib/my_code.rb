@@ -53,3 +53,10 @@ def reduce_to_total(source_array, starting_point = 0)
   result
 end
 
+def reduce_to_all_true(source_array)
+  result = nil 
+  array_index = 0 
+  while array_index < source_array.count do
+    element = source_array[array_index]
+    
+end
