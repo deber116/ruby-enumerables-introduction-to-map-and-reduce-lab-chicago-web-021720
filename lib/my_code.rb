@@ -54,9 +54,14 @@ def reduce_to_total(source_array, starting_point = 0)
 end
 
 def reduce_to_all_true(source_array)
-  result = nil 
+  result = true
   array_index = 0 
   while array_index < source_array.count do
     element = source_array[array_index]
-    
+    if element != true
+      result = false
+    end
+    array_index += 1 
+  end
+  result
 end
