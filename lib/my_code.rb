@@ -20,3 +20,14 @@ def map_to_no_change(source_array)
   end
   result
 end
+
+def map_to_double(source_array)
+  result = []
+  array_index = 0 
+  while array_index < source_array.count do
+    double_element = source_array[array_index] * 2
+    result << double_element
+    array_index += 1
+  end
+  result
+end
