@@ -58,7 +58,7 @@ def reduce_to_all_true(source_array)
   array_index = 0 
   while array_index < source_array.count do
     element = source_array[array_index]
-    if element != true
+    if !element
       result = false
     end
     array_index += 1 
